@@ -8,8 +8,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get -y install \
-    awscli \
-    docker.io \
-    jq 
-
+    build-essential \
+    automake \
+    golang
+    
 RUN rm -rf /var/lib/apt/lists/*
