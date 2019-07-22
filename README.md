@@ -1,4 +1,5 @@
 # docker-lib
+
 Docker image library
 
 ## Images
@@ -6,15 +7,13 @@ Docker image library
 - build - go / gcc
 - deploy - awscli / docker
 
-## Usage
-
-Setup:
+## Setup
 
 ```
 docker login
 ```
 
-New tag:
+## New tag
 
 ```
 git commit -a
@@ -28,7 +27,7 @@ docker build -t $GROUP/deploy:$TAG deploy
 docker push $GROUP/deploy:$TAG
 ```
 
-To trigger an automatic build:
+## To trigger an automatic build
 
 ```
 git push
