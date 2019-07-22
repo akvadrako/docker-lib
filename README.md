@@ -21,10 +21,11 @@ git tag v1
 git push --tags
 
 GROUP=akvadrako
+NAME="${PWD##*/}"
 TAG=`git describe --dirty --tags`
 
-docker build -t $GROUP/deploy:$TAG deploy
-docker push $GROUP/deploy:$TAG
+docker build -t $GROUP/$NAME:$TAG .
+docker push $GROUP/$NAME:$TAG
 ```
 
 ## To trigger an automatic build
