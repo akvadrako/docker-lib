@@ -10,7 +10,7 @@ Docker image library
 ## Setup
 
 ```
-docker login
+docker login -u akvadrako
 ```
 
 ## New tag
