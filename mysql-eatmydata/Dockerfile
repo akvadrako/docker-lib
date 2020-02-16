@@ -1,4 +1,4 @@
-FROM mysql:8.0.16
+FROM mysql:5.7.29
 
 # Install eat my data
 # RUN apt-get update && apt-get install -y eatmydata && apt-get clean
