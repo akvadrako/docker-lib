@@ -9,9 +9,9 @@ Based on https://hub.docker.com/r/interactivesolutions/eatmydata-mysql-server
 
 ## Usage
 
-    GROUP=akvadrako
-    NAME="${PWD##*/}"
-    TAG=5.7.29-`git describe --dirty --tags`
+    NAME=akvadrako/mysql-nosync
+    TAG=8.0.16-`git describe --dirty --tags`
 
-    docker build -t $GROUP/$NAME:$TAG .
-    docker push $GROUP/$NAME:$TAG
+    docker build -t $NAME:$TAG .
+    docker push $NAME:$TAG
+
